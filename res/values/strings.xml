@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">単価計算</string>
+    <string name="info_menu">情報</string>
+
+    <string name="quantity_label">数量</string>
+    <string name="sets_num_label">セット数</string>
+    <string name="price_label">価格</string>
+    <string name="unit_price_label">単価</string>
+
+    <string name="goods1_label">品物1</string>
+    <string name="goods2_label">品物2</string>
+
+    <string name="calc_button">次へ/計算</string>
+    <string name="all_clear_button">全クリア</string>
+
+    <string name="dot_button">.</string>
+    <string name="bs_button">BS</string>
+    <string name="zero_button">0</string>
+    <string name="one_button">1</string>
+    <string name="two_button">2</string>
+    <string name="three_button">3</string>
+    <string name="four_button">4</string>
+    <string name="five_button">5</string>
+    <string name="six_button">6</string>
+    <string name="seven_button">7</string>
+    <string name="eight_button">8</string>
+    <string name="nine_button">9</string>
+
+</resources>

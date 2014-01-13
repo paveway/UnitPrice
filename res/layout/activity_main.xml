@@ -1,0 +1,244 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    style="@style/base"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        style="@style/goods_layout" >
+
+        <TableRow
+            android:id="@+id/goodsRow"
+            style="@style/goods_row" >
+
+            <TextView
+                android:id="@+id/dummyLabel"
+                style="@style/item_label" />
+
+            <TextView
+                android:id="@+id/goods1Label"
+                android:text="@string/goods1_label"
+                android:layout_marginRight="5dp"
+                style="@style/goods_label" />
+
+            <TextView
+                android:id="@+id/goods2Label"
+                android:text="@string/goods2_label"
+                style="@style/goods_label" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/quantityRow"
+            style="@style/goods_row" >
+
+            <TextView
+                android:id="@+id/quantityLabel"
+                android:text="@string/quantity_label"
+                style="@style/item_label" />
+
+            <EditText
+                android:id="@+id/quantity1Value"
+                android:layout_marginRight="5dp"
+                style="@style/input_value">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/quantity2Value"
+                style="@style/input_value" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/setsNumRow"
+            style="@style/goods_row" >
+
+            <TextView
+                android:id="@+id/setsNumLabel"
+                android:text="@string/sets_num_label"
+                style="@style/item_label" />
+
+            <EditText
+                android:id="@+id/setsNum1Value"
+                android:layout_marginRight="5dp"
+                style="@style/input_value" />
+
+            <EditText
+                android:id="@+id/setsNum2Value"
+                style="@style/input_value" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/priceRow"
+            android:layout_marginBottom="10dp"
+            style="@style/goods_row" >
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:text="@string/price_label"
+                style="@style/item_label" />
+
+            <EditText
+                android:id="@+id/price1Value"
+                android:layout_marginRight="5dp"
+                style="@style/input_value" />
+
+            <EditText
+                android:id="@+id/price2Value"
+                style="@style/input_value" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/unitPriceRow"
+            android:layout_marginBottom="10dp"
+            style="@style/goods_row" >
+
+            <TextView
+                android:id="@+id/unitPriceLabel"
+                android:text="@string/unit_price_label"
+                style="@style/item_label" />
+
+            <TextView
+                android:id="@+id/unitPrice1Value"
+                style="@style/output_label"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:id="@+id/unitPrice2Value"
+                style="@style/output_label" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        style="@style/number_table" >
+
+        <TableRow
+            android:id="@+id/number1Row"
+            style="@style/number_row" >
+
+            <Button
+                android:id="@+id/sevenButton"
+                android:text="@string/seven_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/eightButton"
+                android:text="@string/eight_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/nineButton"
+                android:text="@string/nine_button"
+                style="@style/number_button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/number2Row"
+            style="@style/number_row" >
+
+            <Button
+                android:id="@+id/fourButton"
+                android:text="@string/four_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/fiveButton"
+                android:text="@string/five_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/sixButton"
+                android:text="@string/six_button"
+                style="@style/number_button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/number3Row"
+            style="@style/number_row" >
+
+            <Button
+                android:id="@+id/oneButton"
+                android:text="@string/one_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/twoButton"
+                android:text="@string/two_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/threeButton"
+                android:text="@string/three_button"
+                style="@style/number_button" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/number4Row"
+            style="@style/number_row" >
+
+            <Button
+                android:id="@+id/zeroButton"
+                android:text="@string/zero_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/dotButton"
+                android:text="@string/dot_button"
+                android:layout_marginRight="5dp"
+                style="@style/number_button" />
+
+            <Button
+                android:id="@+id/bsButton"
+                android:text="@string/bs_button"
+                style="@style/number_button" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        style="@style/normal_button_layout" >
+
+        <Button
+            android:id="@+id/calcButton"
+            android:text="@string/calc_button"
+            style="@style/normal_button" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6984834494761648/4491644212"
+            ads:loadAdOnCreate="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
