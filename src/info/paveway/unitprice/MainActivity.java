@@ -13,7 +13,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 public class MainActivity extends Activity {
 
@@ -50,6 +51,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
+        loadAdView();
 
         mQuantity1Value  = (EditText)findViewById(R.id.quantity1Value);
         mQuantity2Value  = (EditText)findViewById(R.id.quantity2Value);
@@ -116,6 +119,18 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    /**
+     * ADビューをロードする。
+     */
+    protected void loadAdView() {
+        // AdView をリソースとしてルックアップしてリクエストを読み込む
+        mAdView = (AdView)findViewById(R.id.adView);
+        AdRequest.Builder builder = new AdRequest.Builder();
+        builder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR);
+        AdRequest adRequest = builder.build();
+        mAdView.loadAd(adRequest);
     }
 
     /**

@@ -1,6 +1,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/topLayout"
     style="@style/base"
@@ -229,15 +229,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.google.ads.AdView
+        <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
+            android:theme="@android:style/Theme.Translucent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-6984834494761648/4491644212"
-            ads:loadAdOnCreate="true" />
+            ads:adUnitId="ca-app-pub-6984834494761648/4491644212" />
 
     </RelativeLayout>
 
